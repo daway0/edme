@@ -1,0 +1,10 @@
+steps:
+- task: WindowsMachineFileCopy@2
+  displayName: 'Copy files from $(Build.SourcesDirectory)'
+  inputs:
+    SourcePath: '$(Build.SourcesDirectory)'
+    MachineNames: 192.168.20.81
+    AdminUserName: 'a.jahani@eit'
+    AdminPassword: 'Qazwsx@123'
+    TargetPath: 'D:\DJANGO\EIT'
+    
