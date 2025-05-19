@@ -68,7 +68,9 @@ class Command(BaseCommand):
             "[dbo].[changeteamrole]",
             "[dbo].[hr_exportdata]",
             "[dbo].[hr_importdata]",
-            "[dbo].[teaminformation]"
+            "[dbo].[teaminformation]",
+            "[dbo].[auth2_crossdbsynchromization]"
+
         ]
 
 
