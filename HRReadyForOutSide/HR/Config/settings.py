@@ -59,6 +59,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "HR.context_processors.my_variable",
             ],
         },
     },
@@ -136,12 +137,15 @@ MEDIA_ROOT_HR = os.path.join(BASE_DIR.parent, "HR\media")
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-SESSION_COOKIE_NAME = os.getcwd().split("\\")[-1] + "_sessionid"
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
 CORS_ALLOW_ALL_ORIGINS = True
 
 MAIN_SERVER = "192.168.20.81"
+MAIN_SERVER_NAME = "eit-app"
 HR_PORT = "14000"
 EIT_PORT = "17000"
 PORTAL_PORT = "23000"
+PROCESSMANAGEMENT_PORT = "50000"
+NOTIFICATION_PORT = "6000"
+COSTPRICE_PORT = "25000"

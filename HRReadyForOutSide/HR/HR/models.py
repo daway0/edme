@@ -8,6 +8,7 @@ from django.db import models
 
 from HR.validator import DefaultValue as d
 from HR.validator import Validator as v
+from django.conf import settings
 
 
 
@@ -243,7 +244,7 @@ class Users(models.Model):
 
     @property
     def StaticPhotoURL(self):
-        return "http://eit-app:14000/" + "media/HR/PersonalPhoto/" + self.user_image_name
+        return f"http://{settings.MAIN_SERVER_NAME}:{settings.NOTIFICATION_PORT}/" + "media/HR/PersonalPhoto/" + self.user_image_name
 
 
 class V_AllUserList(models.Model):

@@ -30,7 +30,7 @@
         <div class="bg-white absolute top-16 profile-container w-64 h-64 flex justify-center items-center">
             <a href="/HR/{{user.UserName}}/" target="_blank">
                 <img src="{{user.StaticPhotoURL}}" alt="" class="profile-pic"
-                    onerror="this.onerror=null; this.src='http://192.168.20.81:50000/static/ChangeTeamRole/images/no-profile-mr.png'">
+                    onerror="this.onerror=null; this.src='http://{{MAIN_SERVER}}:{{PROCESSMANAGEMENT_PORT}}/static/ChangeTeamRole/images/no-profile-mr.png'">
             </a>
         </div>
     </div>

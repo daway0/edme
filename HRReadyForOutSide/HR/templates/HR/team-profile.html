@@ -71,7 +71,7 @@
                             <div class="w-full flex flex-col justify-center items-center p-2">
                                 <a href="/HR/profile/user/{{km.UserName}}/" target="_blank">
                                     <img src="/media/HR/PersonalPhoto/{{km.UserAlone}}.jpg" alt="" class="profile-pic rounded-full"
-                                        onerror="this.onerror=null; this.src='http://192.168.20.81:50000/static/ChangeTeamRole/images/no-profile-mr.png'"
+                                        onerror="this.onerror=null; this.src='http://{{MAIN_SERVER}}:{{PROCESSMANAGEMENT_PORT}}/static/ChangeTeamRole/images/no-profile-mr.png'"
                                     >                    
                                 </a>
     
@@ -134,7 +134,7 @@
 
                                         <a href="/HR/profile/user/{{user.UserName.UserName}}/" target="_blank">
                                             <img src="{{user.UserName.StaticPhotoURL}}" alt="" class="w-10 h-10 rounded-full object-contain"
-                                                onerror="this.onerror=null; this.src='http://192.168.20.81:50000/static/ChangeTeamRole/images/no-profile-mr.png'"
+                                                onerror="this.onerror=null; this.src='http://{{MAIN_SERVER}}:{{PROCESSMANAGEMENT_PORT}}/static/ChangeTeamRole/images/no-profile-mr.png'"
                                             >                    
                                         </a>
                                     </div>
@@ -211,7 +211,7 @@
                                     <div class="flex items-center py-1 text-gray-900 whitespace-nowrap team-profile">
                                         <a href="/HR/profile/user/{{user.UserName.UserName}}/" target="_blank">
                                             <img src="{{user.UserName.StaticPhotoURL}}" alt="" class="w-10 h-10 rounded-full object-contain"
-                                                onerror="this.onerror=null; this.src='http://192.168.20.81:50000/static/ChangeTeamRole/images/no-profile-mr.png'"
+                                                onerror="this.onerror=null; this.src='http://{{MAIN_SERVER}}:{{PROCESSMANAGEMENT_PORT}}/static/ChangeTeamRole/images/no-profile-mr.png'"
                                             >                    
                                         </a>
                                     </div>

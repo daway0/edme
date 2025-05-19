@@ -889,7 +889,7 @@ def UserSave(request, action_type=''):
                         
                         # Notify 
                         r = requests.post(
-                            "http://eit-app:6000/EmailService/send/",
+                            f"http://{settings.MAIN_SERVER_NAME}:{settings.HR_PORT}:6000/EmailService/send/",
                             json={
                                 "template_code":"HRXHRXNMEM",
                                 "variables": {

@@ -27,7 +27,7 @@ function initXData(){
         'users':[],
         init(){
             this.showLoading=true;
-            fetch('http://192.168.20.81:14000/HR/api/all-users/')
+            fetch('/HR/api/all-users/')
                 .then(response=> {
                     return response.json();
                 })
