@@ -11,5 +11,5 @@ SELECT  [YearNo]
       ,Sum([OffTimeDaily])OffTimeDaily
       ,[UserName]
 	  ,ROW_NUMBER() Over (order by YearNo) Id
-  FROM [HR].[dbo].[WorkTime]
+  FROM [dbo].[WorkTime]
   Group By UserName,YearNo

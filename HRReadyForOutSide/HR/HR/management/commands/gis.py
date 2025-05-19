@@ -70,7 +70,6 @@ class Command(BaseCommand):
             "[dbo].[hr_importdata]",
             "[dbo].[teaminformation]",
             "[dbo].[auth2_crossdbsynchromization]"
-
         ]
 
 

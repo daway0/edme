@@ -1079,7 +1079,6 @@ class WorkTime(models.Model):
     class Meta:
         verbose_name = "اطلاعات چارگون"
         verbose_name_plural = "اطلاعات چارگون"
-        managed = False
         db_table = 'WorkTime'
 
     UserName = models.ForeignKey("Users", verbose_name='نام کاربری', related_name='WorkTimeUserNames', db_column='UserName', on_delete=models.CASCADE)

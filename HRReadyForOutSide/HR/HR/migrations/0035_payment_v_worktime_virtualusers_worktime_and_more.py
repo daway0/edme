@@ -78,7 +78,6 @@ class Migration(migrations.Migration):
                 'verbose_name': 'اطلاعات چارگون',
                 'verbose_name_plural': 'اطلاعات چارگون',
                 'db_table': 'WorkTime',
-                'managed': False,
             },
         ),
         migrations.CreateModel(
